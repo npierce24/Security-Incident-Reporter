@@ -1,0 +1,27 @@
+PSEUDOCODE: MINI SECURITY INCIDENT REPORTER
+
+LOAD DATA
+1. Open incidents.json and read the saved incident list.
+2. If the file is missing or invalid, use an empty list.
+
+SHOW DASHBOARD
+1. Read incidents from JSON.
+2. Count open, investigating, and unresolved critical incidents.
+3. Read search/status filters from the URL.
+4. Filter incidents and build an HTML dashboard.
+
+ADD INCIDENT
+1. Read title, category, severity, and description.
+2. Validate required fields and allowed choices.
+3. Assign a new ID, current date/time, and Open status.
+4. Add the incident to the list and save JSON.
+
+UPDATE STATUS
+1. Read incident ID and new status.
+2. Validate status and find the incident.
+3. Update status and save JSON.
+
+EXPORT CSV
+1. Read all incidents.
+2. Write fields into CSV format.
+3. Send the CSV file to the browser.
